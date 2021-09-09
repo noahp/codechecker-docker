@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+# Wrapper to enter the codechecker virtualenv before running it.
+
+set -e
+
+CODECHECKER_REPO=/codechecker
+
+source ${CODECHECKER_REPO}/venv/bin/activate
+${CODECHECKER_REPO}/build/CodeChecker/bin/CodeChecker "$@"
