@@ -4,7 +4,19 @@ Run CodeChecker (analyzer) in a Docker container.
 
 ## What is this
 
-Installing CodeChecker from PyPi is currently broken:
+Installing CodeChecker from PyPi ~~is~~ was currently broken! fixed in v6.17.0
+\o/ !
+
+Now you can just do:
+
+```bash
+pip install codechecker
+
+CodeChecker -b "make" -o ./results --enable sensitive --ctu
+CodeChecker parse ./reports -e html -o ./reports_html
+```
+
+## Run in docker
 
 https://github.com/Ericsson/codechecker/issues/3395
 
