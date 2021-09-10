@@ -1,6 +1,6 @@
 # Example of extending the base codechecker image with additional tools
 
-FROM noahpendleton/codechecker:0.3.0
+FROM codechecker
 
 # GCC-ARM compiler
 ARG ARM_URL=https://developer.arm.com/-/media/Files/downloads/gnu-rm/10.3-2021.07/gcc-arm-none-eabi-10.3-2021.07-x86_64-linux.tar.bz2
