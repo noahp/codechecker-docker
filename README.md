@@ -12,7 +12,7 @@ Now you can just do:
 ```bash
 pip install codechecker
 
-CodeChecker -b "make" -o ./reports --enable sensitive --ctu
+CodeChecker check -b "make" -o ./reports --enable sensitive
 CodeChecker parse ./reports -e html -o ./reports_html
 ```
 
